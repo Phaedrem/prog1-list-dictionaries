@@ -1,6 +1,8 @@
-#
-# your comment header here
-#
+######################
+# Name: Darren Bowers
+# Coding 07
+# Purpose: Files use to identify true planets and which of them are closest and farthest from the sun.
+######################
 
 import functions as fn
 
