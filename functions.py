@@ -53,12 +53,12 @@ def closest(sol, mixflag=True):
     distance = 10000
     for key in sol:
         if (mixflag):
-            if sol[key][1] < distance:
-                distance = sol[key][1]
-                closest = key
-        else:
             if sol[key][0] < distance:
                 distance = sol[key][0]
+                closest = key
+        else:
+            if sol[key][1] < distance:
+                distance = sol[key][1]
                 closest = key
     return(closest)
 
