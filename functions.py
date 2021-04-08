@@ -34,9 +34,7 @@ def furthest(sol, mixflag=True):
             if sol[key][0] > distance:
                 distance = sol[key][0]
                 furthest = key
-    return(furthest)
-                
-            
+    return(furthest)    
 
 
 # write a function called furthest()
@@ -50,7 +48,19 @@ def furthest(sol, mixflag=True):
 # or any "magic" functions. you must use a loop to do
 # this manually
 
-
+def closest(sol, mixflag=True):
+    closest = 0
+    distance = 10000
+    for key in sol:
+        if (mixflag):
+            if sol[key][1] < distance:
+                distance = sol[key][1]
+                closest = key
+        else:
+            if sol[key][0] < distance:
+                distance = sol[key][0]
+                closest = key
+    return(closest)
 
 
 # write a function called closest()
