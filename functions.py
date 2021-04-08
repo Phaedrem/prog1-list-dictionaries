@@ -22,7 +22,21 @@ def planets_list(sol, status):
 # or any "magic" functions. you must use a loop to do
 # this manually
 
-
+def furthest(sol, mixflag=True):
+    furthest = 0
+    distance = 0
+    for key in sol:
+        if (mixflag):
+            if sol[key][1] > distance:
+                distance = sol[key][1]
+                furthest = key
+        else:
+            if sol[key][0] > distance:
+                distance = sol[key][0]
+                furthest = key
+    return(furthest)
+                
+            
 
 
 # write a function called furthest()
